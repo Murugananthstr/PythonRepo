@@ -23,6 +23,8 @@ print("I love tea".replace("tea", "coffee"))
 # slicing
 print(language[0:4])
 
+print(language[-4:])
+
 # String length
 
 print(len(language))
@@ -51,6 +53,10 @@ print(sentence.replace("love", "enjoy"))   # "I enjoy data science"
 print(sentence.split(" "))                 # ["I", "love", "data", "science"]
 print(len(sentence))                       # 19
 
+split_sentence = """ Start {} {} {} {}  End """.format(*sentence.split(" "))
+
+print(split_sentence)
+
 # Check if something is inside a string
 print("data" in sentence)     # True
 print("AI" in sentence)       # False
@@ -73,3 +79,8 @@ print(len("artificial intelligence"))
 print("intel" in "artificial intelligence")
 
 print("100,200,300,400,500".split(",")[2])
+
+
+c = 10 % 2
+
+print(" Result is ", c)
