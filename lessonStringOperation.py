@@ -84,3 +84,31 @@ print("100,200,300,400,500".split(",")[2])
 c = 10 % 2
 
 print(" Result is ", c)
+
+print("Useful string methods in python")
+text = "  hello, python world!  "
+
+print(text.upper())           # "  HELLO, PYTHON WORLD!  "
+print(text.lower())           # "  hello, python world!  "
+print(text.strip())           # "hello, python world!"  (removes spaces)
+print(text.strip().title())   # "Hello, Python World!"
+
+sentence = "I love data science"
+print(sentence.replace("love", "enjoy"))   # "I enjoy data science"
+print(sentence.split(" "))                 # ["I", "love", "data", "science"]
+print(len(sentence))                       # 19
+
+# Check if something is inside a string
+print("data" in sentence)     # True
+print("AI" in sentence)       # False
+
+# Find the position of a word
+print(sentence.find("data"))  # 7
+
+print("=".join(["Python", "is", "awesome"]))  # "Python=is=awesome"
+
+print(".".join(['P', 'y', 't', 'h', 'o', 'n']))
+
+template = "Hello, {name}! You're {age}."
+print(template.format(name="Alice", age=30))  # "Hello, Alice! You're 30."
+help(print)
